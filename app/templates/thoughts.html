@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Thoughts Page</h1>
+    <p>Welcome to the Thoughts page. Share your thoughts here!</p>
+
+    {% for thought in thoughts%}
+    <li>{{ thought }}</li>
+    {% endfor %}
+{% endblock %}
